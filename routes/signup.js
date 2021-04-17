@@ -18,7 +18,6 @@ router.post('/signup', async(req,res) => {
         })
         NewUser.save((err)=>{
             if(err) console.log(err)
-            else console.log(NewUser)
             res.send(false)
         })
     }

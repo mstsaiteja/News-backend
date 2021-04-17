@@ -20,6 +20,8 @@ app.use('/',require('./routes/signup'))
 
 app.use('/',require('./routes/login'))
 
+app.use('/change',require('./routes/change'))
+
 app.listen(PORT, (err) => {
     console.log(`Listening on port ${PORT}...!`)
 });
